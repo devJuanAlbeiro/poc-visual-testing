@@ -1,0 +1,20 @@
+name: percy-demo
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: Install
+        run: npm i
+      - name: Cypress Install
+        run: npm i cypress @percy/cypress @percy/cli
+      - name: Building App
+        run: npm run build
+      - name: Percy Test
+        uses: percy/exec-action@v0.3.1
+        with:
+          command: npx @percy/cli snapshot build/
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}

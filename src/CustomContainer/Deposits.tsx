@@ -18,8 +18,9 @@ export default function Deposits() {
         data-testid="deposit-value"
         component="p"
         variant="h4"
+        sx={{ color: 'red' }}
       >
-        $7,249.01
+        $71,249.07
       </Typography>
       <Typography color="text.secondary" sx={{ flex: 1 }}>
         on 15 March, 2019
@@ -29,7 +30,7 @@ export default function Deposits() {
         data-testid="view-balance-deposits-link"
         sx={{
           display: "flex",
-          justifyContent: "flex-start",
+          justifyContent: "flex-end",
         }}
       >
         <Link color="primary" href="#" onClick={preventDefault}>

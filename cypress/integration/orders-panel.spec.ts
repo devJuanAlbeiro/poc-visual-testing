@@ -28,7 +28,7 @@ context('Orders Panel', () => {
     cy.get("[data-cy=see-more-orders-link]").should(
       "have.css",
       "justify-content",
-      "flex-start"
+      "flex-end"
     );
   })
 })

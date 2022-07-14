@@ -7,13 +7,12 @@ context("Deposit Panel", () => {
   it("can check Deposit panel", () => {
     cy.get("[data-cy=deposit-value]")
       .should("exist")
-      .should("contain", "$7,249.01");
+      .should("contain", "$71,249.07");
 
     cy.get("[data-cy=deposit-value]").should(
       "have.css",
       "color",
-      "rgba(0, 0, 0, 0.87)"
-      // "rgb(255, 0, 0)"
+      "rgb(255, 0, 0)"
     );
 
     cy.get("[data-cy=view-balance-deposits-link]").should(
@@ -24,7 +23,7 @@ context("Deposit Panel", () => {
     cy.get("[data-cy=view-balance-deposits-link]").should(
       "have.css",
       "justify-content",
-      "flex-start"
+      "flex-end"
     );
   });
 });

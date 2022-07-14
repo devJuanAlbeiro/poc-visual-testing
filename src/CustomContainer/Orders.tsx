@@ -83,7 +83,7 @@ export default function Orders() {
               data-cy="sale-amount-table-cell"
               data-testid="sale-amount-table-cell"
               align="right"
-              sx={{ color: "blue", fontWeight: "bold" }}
+              sx={{ color: "blue", fontWeight: "bold", fontStyle: 'italic' }}
             >
               Sale Amount
             </TableCell>
@@ -106,7 +106,7 @@ export default function Orders() {
         data-testid="see-more-orders-link"
         sx={{
           display: "flex",
-          justifyContent: "flex-start",
+          justifyContent: "flex-end",
         }}
       >
         <Link color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>

@@ -14,5 +14,21 @@ context('Orders Panel', () => {
       'color',
       'rgb(25, 118, 210)'
     )
+
+    cy.get("[data-cy=sale-amount-table-cell]").should(
+      "have.css",
+      "font-weight",
+      "700"
+    );
+    cy.get("[data-cy=sale-amount-table-cell]").should(
+      "have.css",
+      "font-style",
+      "italic"
+    );
+    cy.get("[data-cy=sale-amount-table-cell]").should(
+      "have.css",
+      "color",
+      'rgb(0, 0, 255)'
+    );
   })
 })

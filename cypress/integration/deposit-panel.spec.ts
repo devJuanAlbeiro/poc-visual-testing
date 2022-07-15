@@ -23,7 +23,7 @@ context("Deposit Panel", () => {
     cy.get("[data-cy=view-balance-deposits-link]").should(
       "have.css",
       "justify-content",
-      "flex-end"
+      "center"
     );
   });
 });

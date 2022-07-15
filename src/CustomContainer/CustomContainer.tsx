@@ -52,7 +52,7 @@ function DashboardContent() {
               <h1>Visual Testing - Percy</h1>
             </Paper>
           </Grid>
-          <Grid container spacing={3} sx={{ mt: 0 }}>
+          <Grid container spacing={3} sx={{ mt: 2 }}>
             {/* Chart */}
             <Grid item xs={12} md={8} lg={9}>
               <Paper

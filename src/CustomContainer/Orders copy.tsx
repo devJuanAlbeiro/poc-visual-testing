@@ -125,7 +125,7 @@ export default function OrdersModified() {
         data-testid="see-more-orders-link"
         sx={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "flex-end",
         }}
       >
         <Link color="primary" href="#" onClick={preventDefault} sx={{ mt: 3 }}>

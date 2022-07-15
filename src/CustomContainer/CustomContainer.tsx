@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 
@@ -13,16 +12,11 @@ function Copyright(props: any) {
   return (
     <Typography
       variant="body2"
-      color="text.secondary"
       align="center"
+      style={{ color: 'blue' }}
       {...props}
     >
-      {"Copyright © "}
-      <Link color="inherit" href="https://mui.com/">
-        Todos Web
-      </Link>{" "}
-      {new Date().getFullYear()}
-      {"."}
+      Copyright © Visual Testing - Percy -  {new Date().getFullYear()}{"."}
     </Typography>
   );
 }
@@ -58,7 +52,7 @@ function DashboardContent() {
               <h1>Visual Testing - Percy</h1>
             </Paper>
           </Grid>
-          <Grid container spacing={3} sx={{ mt: 0 }}>
+          <Grid container spacing={3} sx={{ mt: 2 }}>
             {/* Chart */}
             <Grid item xs={12} md={8} lg={9}>
               <Paper
